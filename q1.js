@@ -1,26 +1,26 @@
 // 1. Write a function called convertArrayToObject which can convert the array to a structured object. 
 
-// const student = [
-//     ['David', ['HTML', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
-//     ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
-// ]
+const student = [
+    ['David', ['HTML', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
+    ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
+]
 
-// let obj = []
-// function convertArrayToObject(arr){
-//     convertedObjArr = []
-//     for(let i = 0; i < arr.length; i++){  
-//         let [name, skills, scores] = arr[i]
-//         let obj = {
-//             name: name,
-//             skills: skills,
-//             scores: scores
-//         }
-//         convertedObjArr.push(obj)
-//     }   
-//     return convertedObjArr
-// }
+let obj = []
+function convertArrayToObject(arr){
+    convertedObjArr = []
+    for(let i = 0; i < arr.length; i++){  
+        let [name, skills, scores] = arr[i]
+        let obj = {
+            name: name,
+            skills: skills,
+            scores: scores
+        }
+        convertedObjArr.push(obj)
+    }   
+    return convertedObjArr
+}
 
-// console.log(convertArrayToObject(student))
+console.log(convertArrayToObject(student))
 
 // Copy the student object to newStudent without mutating the original object. In the new object add the following 
 
